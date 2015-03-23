@@ -6,7 +6,9 @@ module App {
         message: string;
     }
 
-    angular.module("app").controller("homeController", ["$scope", ($scope: HomeScope) => {
-        $scope.message = "Hello world!";
+    angular.module("app").controller("homeController", ["$scope", "$http", ($scope: HomeScope, $http: ng.IHttpService) => {
+        $http.get("/Home/ListWebsites").then((response: ng.IHttpPromiseCallbackArg<any[]>) => {
+            $scope.message = "Number of websites = " + response.data.length;
+        });
     }]);
 }

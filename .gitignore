@@ -1,0 +1,38 @@
+# Build generated files in src
+/src/**/objd/**/*
+/src/**/obj/**/*
+/src/**/bin/**/*
+/src/**/gen/**/*
+/src/**/*.nuspec
+/src/**/StyleCop.Cache
+
+# VSMSBuild generated files in CoreXT
+*.projhash*
+*.sln
+*.slnhash*
+*.suo
+
+# Toolset generated files
+
+# Build.exe
+**/*.err
+**/*.wrn
+**/*.log
+**/*.prf
+**/*.trc
+buildd.dbb
+build.dbb
+buildd.evt
+build.evt
+
+BuildSessionInfo.json
+src/QBuildResultStats.txt
+
+QLogs
+
+**/App/**/*.js
+**/App/**/*.js.map
+**/App/**/*.d.ts
+*.trx
+**/*.csproj.user
+**/*.ccproj.user

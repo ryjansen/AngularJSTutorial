@@ -6,7 +6,7 @@ module App {
         message: string;
     }
 
-    angular.module("app").controller("homeController", ($scope: HomeScope) => {
+    angular.module("app").controller("homeController", ["$scope", ($scope: HomeScope) => {
         $scope.message = "Hello world!";
-    });
+    }]);
 }

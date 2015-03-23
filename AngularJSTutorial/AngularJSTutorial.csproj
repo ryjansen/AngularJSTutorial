@@ -173,6 +173,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\Controllers\AboutView.html" />
     <Content Include="App\Controllers\HomeView.html" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -223,6 +224,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="App\App.ts" />
+    <TypeScriptCompile Include="App\Controllers\AboutController.ts" />
     <TypeScriptCompile Include="App\Controllers\HomeController.ts" />
     <TypeScriptCompile Include="Scripts\typings\angular\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angular\angular-cookies.d.ts" />

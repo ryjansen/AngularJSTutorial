@@ -9,6 +9,10 @@
                 templateUrl: "/App/Controllers/HomeView.html",
                 controller: "homeController",
             })
+            .when("/about", {
+                templateUrl: "/App/Controllers/AboutView.html",
+                controller: "aboutController",
+            })
             .otherwise({
                 redirectTo: "/home"
             });

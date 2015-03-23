@@ -3,12 +3,12 @@
 module App {
 
     interface HomeScope {
-        message: string;
+        websites: any[];
     }
 
     angular.module("app").controller("homeController", ["$scope", "websiteService", ($scope: HomeScope, websiteService: WebsiteService) => {
         websiteService.listWebsites().then((response: ng.IHttpPromiseCallbackArg<any[]>) => {
-            $scope.message = "Number of websites = " + response.data.length;
+            $scope.websites = response.data;
         });
     }]);
 }

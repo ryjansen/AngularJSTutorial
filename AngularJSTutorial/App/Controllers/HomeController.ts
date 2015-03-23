@@ -6,8 +6,8 @@ module App {
         message: string;
     }
 
-    angular.module("app").controller("homeController", ["$scope", "$http", ($scope: HomeScope, $http: ng.IHttpService) => {
-        $http.get("/Home/ListWebsites").then((response: ng.IHttpPromiseCallbackArg<any[]>) => {
+    angular.module("app").controller("homeController", ["$scope", "websiteService", ($scope: HomeScope, websiteService: WebsiteService) => {
+        websiteService.listWebsites().then((response: ng.IHttpPromiseCallbackArg<any[]>) => {
             $scope.message = "Number of websites = " + response.data.length;
         });
     }]);

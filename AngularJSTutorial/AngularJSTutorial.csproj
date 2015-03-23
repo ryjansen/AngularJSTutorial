@@ -212,7 +212,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App\Directives\" />
-    <Folder Include="App\Services\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
@@ -226,6 +225,7 @@
     <TypeScriptCompile Include="App\App.ts" />
     <TypeScriptCompile Include="App\Controllers\AboutController.ts" />
     <TypeScriptCompile Include="App\Controllers\HomeController.ts" />
+    <TypeScriptCompile Include="App\Services\WebsiteService.ts" />
     <TypeScriptCompile Include="Scripts\typings\angular\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angular\angular-cookies.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angular\angular-mocks.d.ts" />
